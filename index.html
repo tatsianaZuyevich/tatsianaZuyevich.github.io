@@ -2,10 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="style/reset.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" type="text/css" href="style/style.css"/>
 		<link rel="stylesheet" type="text/css" href="style/style-media.css"/>
-		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
-		<title>Landing</title>
+		<title>Berlin</title>
 	</head>
 	
 	<body>
@@ -27,7 +48,7 @@
 				<div class="header-bg__content">
 					<h1 class="header-bg__content-title title">Manage your team, faster!</h1>
 					<p class="header-bg__content-text text-content">Create custom landing pages with Berlin that convert more visitors than any website.</p>
-					<a href="#" class="header-bg__content-button button-start">Start free 14 days trial</a>
+					<a href="#form-reg" class="header-bg__content-button button-start">Start free 14 days trial</a>
 					<p class="header-bg__content-text-little text-little-content">No credit card required</p>
 				</div>
 			</div>
@@ -78,7 +99,7 @@
 						Create custom landing pages with Berlin that convert more visitors than any website.
 						With lots of unique blocks, you can easily build a page without coding.
 					</p>
-					<a href="#" class="graph-text__button button-start">Start free 14 days trial</a>
+					<a href="#form-reg" class="graph-text__button button-start">Start free 14 days trial</a>
 				</div>
 			</div>
 		</div>	
@@ -91,7 +112,7 @@
 					Create custom landing pages with Berlin that convert more visitors than any website.
 					With lots of unique blocks, you can easily build a page without coding.
 				</p>
-				<a href="#" class="graph-text__button button-start">Start free 14 days trial</a>
+				<a href="#form-reg" class="graph-text__button button-start">Start free 14 days trial</a>
 			</div>
 			
 			<div class="graph-images">
@@ -108,7 +129,7 @@
 			
 			<div class="movie-bg">
 				<div class="movie-shadow">
-					<div class="movie-conteiner">
+					<div class="movie-cont">
 						<div class="movie-button">
 							<div class="movie-button__shadow">
 								<div class="movie-button__rect"></div>
@@ -157,7 +178,7 @@
 						<li class="business__price-doit">Custom Domain Names</li>
 						<li class="business__price-doit">Unlimited Emailsli</li>
 					</ul>
-					<a href="#" class="header-bg__content-button button-start">Start free 14 days trial</a>
+					<a href="#form-reg" class="header-bg__content-button button-start">Start free 14 days trial</a>
 					<p class="business__no-credit">No credit card required</p>
 				</div>
 			</div>
@@ -178,7 +199,7 @@
 						<li>Custom Domain Names</li>
 						<li>Unlimited Emailsli</li>
 					</ul>
-					<a href="#" class="header-bg__content-button button-start">Start free 14 days trial</a>
+					<a href="#form-reg" class="header-bg__content-button button-start">Start free 14 days trial</a>
 					<p class="business__no-credit">No credit card required</p>
 				</div>				
 			</div>
@@ -244,14 +265,14 @@
 	<!--One-place-->			
 		<div class="one-place">
 			<p class="one-place__title">Manage your team in one place</p>
-			<a href="#" class="header-bg__content-button button-start">Start free 14 days trial</a>
+			<a href="#form-reg" class="header-bg__content-button button-start">Start free 14 days trial</a>
 		</div>
 		
 	<!--Registration-->		
 		<div class="registration-bg">
 			<div class="registration-container">
 				<h3 class="registration-text big-text">Please leave your request</h3>
-				<form name="registration">
+				<form name="registration" action="obrabotka.php" method="post" id="form-reg">
 					<input class="registration__info" type="text" name="first-name" placeholder="First name" required/>
 					<input class="registration__info" type="text" name="last-name" placeholder="Last name" required/>
 					<input class="registration__info" type="email" name="email" placeholder="Email" required/>
@@ -259,8 +280,11 @@
 					<div class="registration__file">
 						<p class="form-doc">You can attach files or documents</p>
 						<div class="form-file__copy">
-							<img src="images/icon.png" alt="Icon file"/><span>Attach image</span>
-							<input class="form-file" type="file" name="attach" value="Attach image"/>
+							<div class="form-file__copy-button">
+								<img src="images/icon.png" alt="Icon file"/>
+								<p>Attach image</p>
+							</div>
+							<input class="form-file" type="file" name="attach"/>
 						</div>						
 					</div>
 					<input class="registration__button-send" type="submit" name="send" value="Send"/>

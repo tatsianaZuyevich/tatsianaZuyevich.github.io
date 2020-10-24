@@ -4,45 +4,102 @@
 	}
 	.about__container, .graph__container, .business-container, .brands-gallery, .reviews {
 		flex-wrap: wrap;
-		padding-left: 4%;
-		padding-right: 4%;
+		/*padding-left: 4%;
+		padding-right: 4%;*/
+		width: 90%;
 		padding-top: 0;
 		justify-content: center;
 		margin: 0 auto;
 	}
+	
+	header {
+		width: 90%;
+	}
+	.header-bg__content {
+		width: 70%;
+	}
+	
 	.about__container {
-		padding-top: 50px;
+		padding: 50px 0;
 	}
 	.about-us__line {
 		display: none;
 	}
 	.about__block {
-		padding-right: 10%;
+		width: 40%;
 		padding-bottom: 50px;
+		margin: 0;
+	}
+	.about__block:first-child {
+		padding-right: 15%;
 	}
 	.about__block:last-child, .reviews-content {
 		padding-bottom: 0;
 	}
-	.reviews-content {
-		min-height: auto;
+	.graph__container {
+		padding: 50px 0;
 	}
 	.graph-text {
-		width: 65%;
+		width: auto;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 	.activity__container .graph-images {
 		margin-top: 50px;
 	}
+	
+	.movie-cont {
+		width: 70%;		
+	}
+	
+	.plan-conteiner {
+		width: 80%;
+		padding: 50px 0;
+	}
+	
 	.business-container .business-block, .reviews {
 		margin-bottom: 50px;
+	}	
+	
+	.brands {
+		padding-bottom: 50px;
+	}
+	.brands-gallery a {
+		margin-bottom: 30px;
+	}
+	
+	.one-place {
+		margin-bottom: 50px;
+	}
+	.one-place__title {
+		margin-right: 20px;
+	}
+
+	.reviews-content {
+		min-height: auto;
 	}
 	.reviews-block {
-		min-width: 350px;
+		width: 80%;
 		border-right: none;
 		border-bottom: 1px solid #e8e8ea;
+		flex-grow: 0; 
+		flex-basis: auto; 
 	}
+	.reviews-block:first-child {
+		padding: 0;
+	}
+	
 	.registration-container {
-		width: 65%;
+		width: 80%;
+		padding-bottom: 80px;
 	}
+	.registration-text {
+		text-align: center;
+	}
+	.registration-container form {
+		padding: 4%;
+	}
+	
 	.footer-link {
 		display: flex;
 		flex-direction: column;
@@ -50,7 +107,165 @@
 	.footer-link  div {
 		margin-bottom: 20px;
 	}
+	.footer-link__networks {
+		text-align: center;
+	}
+	.footer-link__networks a {
+		margin-left: 40px;
+	}
+	.footer-link__networks a:first-child {
+		margin-left: 0;
+	}
+	.footer-menu {
+    width: 80%;
+    margin-bottom: 60px;
+	}
 	.footer-menu__block {
 		margin-right: 4%;
-	}		
+	}	
+	.footer-menu__block:last-child {
+		margin-right: 0;
+	}	
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+	html {
+		font-size: 12px;
+	}
+	.about__container, .graph__container, .business-container, .brands-gallery, .reviews {
+		flex-wrap: wrap;
+		/*padding-left: 4%;
+		padding-right: 4%;*/
+		width: 90%;
+		padding-top: 0;
+		justify-content: center;
+		margin: 0 auto;
+	}
+	
+	header {
+		width: 90%;
+	}
+	.header-bg__content {
+		width: 70%;
+	}
+	
+	.about__container {
+		padding: 50px 0;
+	}
+	.about-us__line {
+		display: none;
+	}
+	.about__block {
+		width: 80%;
+		padding-bottom: 50px;
+		margin: 0;
+	}
+	.about__block:last-child, .reviews-content {
+		padding-bottom: 0;
+	}
+	.graph__container {
+		padding: 50px 0;
+	}
+	.graph-text {
+		width: auto;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.img-top, .img-bottom, .activity-left, .activity-right {
+		width: 70%;
+		height: 70%;
+	}
+
+	.activity__container .graph-images {
+		margin-top: 50px;
+	}
+	
+	.movie-cont {
+		width: 70%;		
+	}
+	
+	.plan-conteiner {
+		width: 80%;
+		padding: 50px 0;
+	}
+	
+	.business-container .business-block, .reviews {
+		margin-bottom: 50px;
+	}
+	.business-block {
+		width: 80%;
+	}	
+	
+	.brands {
+		padding-bottom: 50px;
+	}
+	.brands-gallery a {
+		margin-bottom: 30px;
+	}
+	
+	.one-place {
+		margin-bottom: 50px;
+		flex-wrap: wrap;
+	}
+	.one-place__title {
+		margin-right: 20px;
+	}
+
+	.reviews-content {
+		min-height: auto;
+	}
+	.reviews-block {
+		min-width: 80%;
+		border-right: none;
+		border-bottom: 1px solid #e8e8ea;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.reviews-block:first-child {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	.registration-container {
+		width: 80%;
+		padding-bottom: 80px;
+	}
+	.registration-text {
+		text-align: center;
+	}
+	.registration-container form {
+		padding: 4%;
+	}
+	.registration__file {
+		flex-wrap: wrap;
+	}
+	
+	.footer-link {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+	}
+	.footer-link  div {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.footer-link__copy, .footer-link__networks {
+		text-align: center;
+	}
+	.footer-link__networks a {
+		margin-left: 40px;
+	}
+	.footer-link__networks a:first-child {
+		margin-left: 0;
+	}
+	.footer-menu {
+    width: 80%;
+    margin-bottom: 60px;
+	}
+	.footer-menu__block {
+		margin-right: 4%;
+	}	
+	.footer-menu__block:last-child {
+		margin-right: 0;
+	}	
 }
