@@ -52,6 +52,16 @@ header {
 	z-index: 30;
 	top: 0;
 }
+.header_scroll {
+	padding-left: 14%;
+	padding-right: 14%;
+	padding-bottom: 30px;
+	background: linear-gradient(315.06deg, rgba(21, 38, 73, 0.8) 5%, rgba(79, 82, 92, 0.8) 100%);
+	transition: background .3s ease-out;
+}
+.header_scroll_none {
+	background: none;
+}
 .header__logo {
 	width: 96px;
 	height: 23px;
@@ -256,7 +266,7 @@ header {
 }
 .movie-video {
 	width: 100%;
-	/*height: 526px;*/
+	height: 526px;
 	object-fit: fill;
 	display: none;
 }
@@ -339,6 +349,7 @@ header {
 	text-transform: uppercase; 
 	color: #0f3d33;
 	border-radius: 23px;
+	cursor: pointer;
 }
 .toggle-active {
 	background-color: #50e3c2;
