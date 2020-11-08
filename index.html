@@ -116,7 +116,7 @@
 			</div>
 			
 			<div class="graph-images">
-				<img src="images/activity1.png" alt="Activity" class="graph-img activity-left"/>
+				<img src="images/activity1-1.png" alt="Activity" class="graph-img activity-left"/>
 				<img src="images/activity2.png" alt="Uploading" class="graph-img activity-right"/>
 			</div>
 		</div>
@@ -176,7 +176,7 @@
 						<li>Unlimited Blocks</li>
 						<li>5GB Clould Storages</li>
 						<li class="business__price-doit">Custom Domain Names</li>
-						<li class="business__price-doit">Unlimited Emailsli</li>
+						<li class="business__price-doit">Unlimited Emails</li>
 					</ul>
 					<a href="#form-reg" class="header-bg__content-button button-start">Start free 14 days trial</a>
 					<p class="business__no-credit">No credit card required</p>
@@ -197,7 +197,7 @@
 						<li>Unlimited Blocks</li>
 						<li>5GB Clould Storages</li>
 						<li>Custom Domain Names</li>
-						<li>Unlimited Emailsli</li>
+						<li>Unlimited Emails</li>
 					</ul>
 					<a href="#form-reg" class="header-bg__content-button button-start">Start free 14 days trial</a>
 					<p class="business__no-credit">No credit card required</p>
@@ -271,8 +271,8 @@
 	<!--Registration-->		
 		<div class="registration-bg">
 			<div class="registration-container">
-				<h3 class="registration-text big-text">Please leave your request</h3>
-				<form name="registration" action="obrabotka.php" method="post" id="form-reg">
+				<h3 class="registration-text big-text" id="form-reg">Please leave your request</h3>
+				<form name="registration" action="obrabotka.php" method="post">
 					<input class="registration__info" type="text" name="first-name" placeholder="First name" required/>
 					<input class="registration__info" type="text" name="last-name" placeholder="Last name" required/>
 					<input class="registration__info" type="email" name="email" placeholder="Email" required/>
@@ -348,9 +348,22 @@
 					<a href="#"><img src="images/object-fb.png" alt="Logo facebook"/></a>
 					<a href="#"><img src="images/object-google.png" alt="Logo google"/></a>
 				</div>
+				<div class="footer-currency">
+					<div class="footer-currency__block">
+						<img src="images/usd.png" alt="Currency USD"/>
+						<div class="currency-usd"></div>
+						<div class="currency-usd-rate"></div>
+					</div>
+					<div class="footer-currency__block">
+						<img src="images/euro.png" alt="Currency Euro"/>
+						<div class="currency-eur"></div>
+						<div class="currency-eur-rate"></div>
+					<div>
+				</div>
 			</div>
 		</footer>
 		
 		<script src="scripts/main.js"></script>
+		<script src="scripts/requests.js"></script>
 	</body>
 </html>

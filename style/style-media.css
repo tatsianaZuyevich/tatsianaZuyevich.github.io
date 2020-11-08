@@ -104,7 +104,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	.footer-link  div {
+	.footer-link__networks, .footer-link__copy, .footer-link__block-link {
 		margin-bottom: 20px;
 	}
 	.footer-link__networks {
@@ -126,6 +126,13 @@
 	.footer-menu__block:last-child {
 		margin-right: 0;
 	}	
+	/*.footer-currency {
+		text-align: center;
+	}
+	.footer-currency .footer-currency__block {
+		width: auto;
+		align-items: stretch;
+	}*/
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
@@ -143,7 +150,16 @@
 	}
 	
 	header {
-		width: 90%;
+		width: 80%;
+	}
+	header nav {
+		display: flex;
+		flex-wrap: wrap;
+		/*width: 50%;
+		text-align: right;*/
+	}
+	.header__menu a {
+		margin-right: 15px;
 	}
 	.header-bg__content {
 		width: 70%;
@@ -173,7 +189,7 @@
 	}
 	.img-top, .img-bottom, .activity-left, .activity-right {
 		width: 70%;
-		height: 70%;
+		/*height: 70%;*/
 	}
 
 	.activity__container .graph-images {
@@ -204,11 +220,20 @@
 	}
 	
 	.one-place {
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 50px;
 		flex-wrap: wrap;
+		justify-content: center;
+		width: 90%;
 	}
 	.one-place__title {
-		margin-right: 20px;
+		margin-right: 0;
+		padding: 0 10px;
+	}
+	.one-place a {
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 
 	.reviews-content {
@@ -245,7 +270,7 @@
 		flex-direction: column;
 		width: 80%;
 	}
-	.footer-link  div {
+	.footer-link__networks, .footer-link__copy, .footer-link__block-link  {
 		margin-bottom: 20px;
 		width: 100%;
 	}
@@ -268,4 +293,11 @@
 	.footer-menu__block:last-child {
 		margin-right: 0;
 	}	
+	/*.footer-currency {
+		text-align: center;
+	}
+	.footer-currency .footer-currency__block {
+		width: auto;
+		align-items: stretch;
+	}*/
 }
