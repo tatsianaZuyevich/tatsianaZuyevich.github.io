@@ -30,4 +30,16 @@ document.querySelector('.toggle-year').onclick = function () {
 	document.querySelector(".business-year").classList.add("line-green");
 	document.querySelector(".business-month").classList.remove("line-green");
 }
+
+$(document).ready(function(){
+	$('#phone').inputmask({"mask": "+375 (99) 999-99-99"});
+});
+
+document.querySelector('.form-file').onchange = function () {
+
+
+	var name = this.value;
+	name = name.replace(/.*[\/\\]/, '');
+	document.querySelector('.file-name').innerHTML = name;
+};
 	

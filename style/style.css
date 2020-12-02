@@ -596,7 +596,7 @@ header {
 }*/
 
 .form-file__copy {
-	width: 130px;
+	/*width: 130px;*/
 	/*height: 37px;*/	
 	display: flex;
 	flex-direction: column;
@@ -608,19 +608,15 @@ header {
 	background: #f2f5f8;
 	border-radius: 3px;
 }
-.form-file__copy img {
-	height: 15px;
-	width: 13px;
-	margin-right: 8px;
-	cursor: pointer;
-}
 .form-file__copy p {
-	height: 15px;
 	font: 400 0.78rem Inter sans-serif;
 	line-height: 15px;
 	letter-spacing: -0.3px;
 	color: #323232;
 	cursor: pointer;
+	background: url('../images/icon.png') left center no-repeat;
+	padding-left:20px;
+	word-wrap: break-word;
 }
 .form-file {
 	width: 129px;
@@ -641,6 +637,10 @@ header {
 	min-height: 50px;
 	border: none;
 	cursor: pointer;
+}
+
+.registration__button-send:hover {
+	background-color: #50e3c2;
 }
 
 footer {

@@ -272,19 +272,18 @@
 		<div class="registration-bg">
 			<div class="registration-container">
 				<h3 class="registration-text big-text" id="form-reg">Please leave your request</h3>
-				<form name="registration" action="obrabotka.php" method="post">
+				<form name="registration" action="obrabotka.php" method="post" enctype="multipart/form-data">
 					<input class="registration__info" type="text" name="first-name" placeholder="First name" required/>
 					<input class="registration__info" type="text" name="last-name" placeholder="Last name" required/>
 					<input class="registration__info" type="email" name="email" placeholder="Email" required/>
-					<input class="registration__info" type="tel" name="phone" placeholder="Phone" required/>
+					<input class="registration__info" type="tel" id="phone" name="phone" placeholder="Phone" required/>
 					<div class="registration__file">
 						<p class="form-doc">You can attach files or documents</p>
 						<div class="form-file__copy">
 							<div class="form-file__copy-button">
-								<img src="images/icon.png" alt="Icon file"/>
-								<p>Attach image</p>
+								<p class="file-name">Attach image</p>
 							</div>
-							<input class="form-file" type="file" name="attach"/>
+							<input class="form-file" type="file" name="attach" accept="image/*, application/msword, application/pdf"/>
 						</div>						
 					</div>
 					<input class="registration__button-send" type="submit" name="send" value="Send"/>
@@ -362,6 +361,10 @@
 				</div>
 			</div>
 		</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
 		
 		<script src="scripts/main.js"></script>
 		<script src="scripts/requests.js"></script>
